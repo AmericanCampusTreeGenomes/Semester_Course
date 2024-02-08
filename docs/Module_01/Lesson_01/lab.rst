@@ -115,9 +115,25 @@ how we use it:
 
 .. code-block:: bash
 
-    wget https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas
+    wget https://arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas.gz
 
 That’s it, just two parts: wget [path-to-what-we-want-to-fetch]
+
+Now, this file ends in “.gz”. This means that it is compressed using a program
+called `gzip <https://www.gnu.org/software/gzip/>`_. This is a very common and nifty
+compression tool, just like .zip files on Windows and MacOS. To decompress this file,
+all we need to do is:
+
+.. code-block:: bash
+
+    gzip -d filename
+
+The ``-d`` flag means “decompress”. What if we want to compress something?
+
+.. code-block:: bash
+
+    gzip filename
+
 
 Step 2. Let’s see what the genome looks like
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -157,20 +173,11 @@ Here’s the link:
 
     https://www.arabidopsis.org/download_files/Sequences/Araport11_blastsets/Araport11_genes.202106.pep.fasta.gz
 
-This file ends in “.gz”. This means that it is compressed using a program
-called `gzip <https://www.gnu.org/software/gzip/>`_. This is a very common and nifty
-compression tool, just like .zip files on Windows and MacOS. To decompress this file,
-all we need to do is:
+This is another compressed file, so to decompress:
 
 .. code-block:: bash
 
     gzip -d filename
-
-The ``-d`` flag means “decompress”. What if we want to compress something?
-
-.. code-block:: bash
-
-    gzip filename
 
 
 Mastering Content
