@@ -151,6 +151,8 @@ This is what FASTA format looks like. FASTA format contains two major parts:
    about the chromosome number (as you see here). Other genomes are not so perfect, and
    might be in hundreds or thousands of pieces.
 
+Press ``q`` to exit the ``less`` command. 
+
 Just like in Microsoft Word, you can use another UNIX program to find words or characters.
 This is really helpful if we just want to look at every line that has a FASTA header with
 the “>” character.
